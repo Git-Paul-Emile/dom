@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Domickha - Saint-Valentin 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Great+Vibes&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOVE MESSAGE MODAL -->
+<div class="love-modal" id="loveModal">
+  <div class="love-modal-overlay" id="loveModalOverlay"></div>
+  <div class="love-modal-content">
+    <div class="love-modal-heart">♥</div>
+    <p class="love-modal-message" id="loveModalMessage"></p>
+    <button class="love-modal-close" id="loveModalClose">Mon cœur t'appartient</button>
+  </div>
+</div>
+
+<!-- VIDEO BACKGROUND -->
+<div class="video-background" id="videoBackground">
+  <video id="bgVideo" autoplay muted loop playsinline>
+    <source src="media/VID-20240528-WA0008.mp4" type="video/mp4">
+  </video>
+  <div class="video-bg-overlay"></div>
+</div>
+
+<!-- FLOATING HEARTS -->
+<div class="hearts-bg" id="heartsBg"></div>
+
+<!-- HERO -->
+<section class="hero noise">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-particles" id="heroParticles"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">Domickha</h1>
+    <div class="hero-sub">Mon amour, ma Valentine pour la vie</div>
+    <div class="hero-divider"></div>
+    <p class="hero-quote">
+      " En ce jour de Saint-Valentin, chaque photo te raconte<br>
+      combien mon coeur t'appartient pour l'eternite. "
+    </p>
+  </div>
+  <div class="scroll-hint" onclick="document.getElementById('gallery1').scrollIntoView({behavior:'smooth'})">
+    <span>Découvrir notre amour</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- PARALLAX STRIP 1 -->
+<div class="parallax-strip noise">
+  <div class="parallax-strip-bg grad-1" data-parallax="0.3"></div>
+  <div class="parallax-strip-overlay" style="background: radial-gradient(ellipse, rgba(10,3,9,0.5), rgba(10,3,9,0.85));">
+    <p class="parallax-quote reveal">En ce jour de Saint-Valentin, mon coeur n'appartient qu'a toi</p>
+  </div>
+</div>
+
+<!-- GALLERY SECTION 1 -->
+<section class="section noise" id="gallery1" style="background: radial-gradient(ellipse at 30% 40%, rgba(233,30,99,0.04), transparent 60%);">
+  <div class="section-inner">
+    <div class="gallery-header reveal">
+      <h2>Tes Moments de Bonheur</h2>
+    </div>
+    <div class="gallery-grid" id="gallery1-grid">
+      <!-- Photos chargées dynamiquement -->
+    </div>
+  </div>
+</section>
+
+<!-- PARALLAX STRIP 2 -->
+<div class="parallax-strip noise">
+  <div class="parallax-strip-bg grad-2" data-parallax="0.25"></div>
+  <div class="parallax-strip-overlay" style="background: radial-gradient(ellipse, rgba(10,3,9,0.4), rgba(10,3,9,0.88));">
+    <p class="parallax-quote reveal">Tu es l'un des cadeaux le plus precieux de ma vie</p>
+  </div>
+</div>
+
+<!-- MESSAGE + PHOTO SECTIONS -->
+<section class="section noise" style="background: radial-gradient(ellipse at 70% 30%, rgba(233,30,99,0.03), transparent 60%);">
+  <div class="section-inner">
+
+    <!-- Message 1 -->
+    <div class="message-section">
+      <div class="message-photo reveal-left">
+        <img src="media/gracita_lee_20211006_1.png" alt="Souvenir" loading="lazy">
+      </div>
+      <div class="message-text reveal-right">
+        <h3>Le jour ou mon coeur t'a trouvee</h3>
+        <p>Il y a des rencontres qui changent le cours d'une vie entiere. La notre en fait partie. Ce jour-la, sans le savoir, j'ai trouve ma Valentine, mon refuge, ma raison de croire que l'amour veritable existe.</p>
+        <p>Tu as posé tes yeux sur les miens et le monde s'est mis en pause - un instant d'eternite que je garde precieusement en moi.</p>
+      </div>
+    </div>
+
+    <div class="section-divider"><div class="ornament">+ +</div></div>
+
+    <!-- Message 2 -->
+    <div class="message-section reverse">
+      <div class="message-photo reveal-right">
+        <img src="media/d1edd75ebb58451f9b2a81c32cec1f04.jpg" alt="Souvenir" loading="lazy">
+      </div>
+      <div class="message-text reveal-left">
+        <h3>Ce que tu representes pour moi</h3>
+        <p>Tu es le matin calme apres la tempete, la chaleur douce d'un feu en hiver. Avec toi, je n'ai pas besoin de chercher le bonheur - il est la, a chaque instant passe ensemble.</p>
+        <p>Tu me rends meilleur, plus patient, plus aimant. Tu m'inspires a devenir la meilleure version de moi-meme, simplement en etant toi. Tu es ma Valentine tous les jours de l'annee.</p>
+        <div class="signature">- Mon inspiration, mon amour</div>
+      </div>
+    </div>
+
+    <div class="section-divider"><div class="ornament">+ +</div></div>
+
+    <!-- Message 3 -->
+    <div class="message-section">
+      <div class="message-photo reveal-left">
+        <img src="media/WhatsApp Image 2025-02-14 à 22.34.38_d7c02d79.jpg" alt="Souvenir" loading="lazy">
+      </div>
+      <div class="message-text reveal-right">
+        <p>La ou tu es, c'est chez moi. Pas entre quatre murs, mais dans la douceur de ta voix, la chaleur de tes bras, le confort de ton silence complice.</p>
+        <p>On a construit ensemble bien plus qu'un foyer - on a cree un univers ou l'amour n'est jamais un mot vide, mais une action de chaque jour. En cette Saint-Valentin, je te redis mon amour eternel.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARALLAX STRIP 3 -->
+<div class="parallax-strip noise">
+  <div class="parallax-strip-bg grad-5" data-parallax="0.35"></div>
+  <div class="parallax-strip-overlay" style="background: radial-gradient(ellipse, rgba(10,3,9,0.45), rgba(10,3,9,0.9));">
+    <p class="parallax-quote reveal">Mon coeur bat a l'unisson du tien, aujourd'hui et toujours</p>
+  </div>
+</div>
+
+
+
+<!-- FEATURE PHOTO -->
+<section class="section noise" style="background: radial-gradient(ellipse at 50% 60%, rgba(233,30,99,0.05), transparent 50%);">
+  <div class="section-inner" style="text-align: center;">
+    <div class="gallery-header reveal">
+      <p>Celle qui fait battre mon coeur a chaque regard</p>
+    </div>
+    <div class="feature-photo reveal-scale">
+      <img src="media/WhatsApp Image 2026-02-11 at 08.06.08.jpeg" alt="Photo preferee" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- PARALLAX STRIP 4 -->
+<div class="parallax-strip noise">
+  <div class="parallax-strip-bg grad-6" data-parallax="0.3"></div>
+  <div class="parallax-strip-overlay" style="background: radial-gradient(ellipse, rgba(10,3,9,0.4), rgba(10,3,9,0.88));">
+    <p class="parallax-quote reveal">Avec toi, chaque instant est une declaration d'amour</p>
+  </div>
+</div>
+
+<!-- GALLERY SECTION 2 - Plus de souvenirs -->
+<section class="section noise" id="gallery2" style="background: radial-gradient(ellipse at 70% 60%, rgba(233,30,99,0.04), transparent 60%);">
+  <div class="section-inner">
+    <div class="gallery-header reveal">
+      <h2>Album de Notre Amour</h2>
+      <p>Tous nos moments precieux ensemble</p>
+    </div>
+    <div class="gallery-grid" id="gallery2-grid">
+      <!-- Photos chargées dynamiquement -->
+    </div>
+  </div>
+</section>
+
+<!-- PARALLAX STRIP 5 -->
+<div class="parallax-strip noise">
+  <div class="parallax-strip-bg grad-3" data-parallax="0.28"></div>
+  <div class="parallax-strip-overlay" style="background: radial-gradient(ellipse, rgba(10,3,9,0.5), rgba(10,3,9,0.85));">
+    <p class="parallax-quote reveal">Notre amour est une histoire sans fin qui commence chaque jour</p>
+  </div>
+</div>
+
+<!-- GALLERY SECTION 3 -->
+<section class="section noise" id="gallery3" style="background: radial-gradient(ellipse at 40% 50%, rgba(233,30,99,0.03), transparent 60%);">
+  <div class="section-inner">
+    <div class="gallery-header reveal">
+      <h2>Souvenirs Inoubliables</h2>
+      <p>Chaque image raconte notre histoire d'amour</p>
+    </div>
+    <div class="gallery-grid" id="gallery3-grid">
+      <!-- Photos chargées dynamiquement -->
+    </div>
+  </div>
+</section>
+
+<!-- PARALLAX STRIP 6 -->
+<div class="parallax-strip noise">
+  <div class="parallax-strip-bg grad-4" data-parallax="0.32"></div>
+  <div class="parallax-strip-overlay" style="background: radial-gradient(ellipse, rgba(10,3,9,0.45), rgba(10,3,9,0.88));">
+    <p class="parallax-quote reveal">Tu es mon aujourd'hui et tous mes lendemains de bonheur</p>
+  </div>
+</div>
+
+<!-- GALLERY SECTION 4 -->
+<section class="section noise" id="gallery4" style="background: radial-gradient(ellipse at 60% 40%, rgba(233,30,99,0.04), transparent 60%);">
+  <div class="section-inner">
+    <div class="gallery-header reveal">
+      <h2>Nos Derniers Moments Ensemble</h2>
+      <p>Les souvenirs les plus frais de notre amour</p>
+    </div>
+    <div class="gallery-grid" id="gallery4-grid">
+      <!-- Photos chargées dynamiquement -->
+    </div>
+  </div>
+</section>
+
+<!-- FINAL SECTION -->
+<section class="final-section noise">
+  <div class="reveal">
+    <h2 class="final-title">Joyeuse Saint-Valentin, Mon Amour</h2>
+    <div class="final-sub">Domickha, ma Valentine pour l'eternite</div>
+    <p class="final-message">
+      En ce jour special, je te redis mon amour eternel.
+      Tu es mon passe prefere, mon present le plus beau, et mon futur le plus attendu.
+      Je t'aime aujourd'hui, demain, et pour toujours.
+    </p>
+    <div class="final-infinity">D + Toi = Amour Infini</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="text-align: center; padding: 40px 24px 30px; position: relative; z-index: 2;">
+  <div style="width: 60px; height: 1px; background: linear-gradient(90deg, transparent, rgba(233,30,99,0.3), transparent); margin: 0 auto 20px;"></div>
+  <p style="font-family: 'Cormorant Garamond', serif; font-size: 12px; letter-spacing: 4px; text-transform: uppercase; color: rgba(233,30,99,0.25);">
+    Fait avec tout mon amour pour toi, Domickha - Saint-Valentin 2026
+  </p>
+</footer>
+
+<!-- SCROLL TO TOP BUTTON -->
+<button class="scroll-top-btn" id="scrollTopBtn" aria-label="Retour en haut">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"></polyline>
+  </svg>
+</button>
+
+<script src="main.js"></script>
+</body>
+</html>
